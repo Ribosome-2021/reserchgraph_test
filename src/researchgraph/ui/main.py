@@ -1,8 +1,11 @@
 import streamlit as st
 
 import sys
+import os
 
-sys.path.append("/mount/src/researchgraph/src")
+sys.path.append("/workspaces/reserchgraph_test/src/")
+sys.path.append("/workspaces/reserchgraph_test/src/")
+os.environ["PYTHONPATH"] = "/workspaces/reserchgraph_test/src/"
 
 from researchgraph.research_graph import ResearchGraph
 from researchgraph.retrieve_paper_subgraph.retrieve_paper_subgraph import (
